@@ -1,0 +1,8 @@
+{
+  "useSmtp": true,
+  "host": "smtp.dondominio.com",
+  "port": 465,
+  "username": "web@aspige.es",
+  "password": "Jmcea.005",
+  "recipientEmail": "info@aspige.es"
+}
