@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Utilidades ASPIGE</title>
+  <meta name="robots" content="noindex,nofollow,noarchive">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f5f7;
+      padding: 40px;
+      color: #222;
+    }
+
+    .box {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    }
+
+    #contenido {
+      display: none;
+    }
+
+    a {
+      display: block;
+      margin: 12px 0;
+      color: #0066cc;
+      font-weight: bold;
+    }
+  </style>
+
+  <script>
+    function comprobarClave() {
+      var clave = prompt("Introduce la contraseña:");
+
+      if (clave === "CAMBIA_ESTA_CLAVE") {
+        document.getElementById("contenido").style.display = "block";
+      } else {
+        alert("Contraseña incorrecta");
+        window.location.href = "/";
+      }
+    }
+  </script>
+</head>
+
+<body onload="comprobarClave()">
+  <div id="contenido" class="box">
+    <h1>UTILIDADES</h1>
+        <h2>Programas</h2>
+
+    <a href="https://drive.google.com/file/d/1XPBIIgLzdOk6w-sSh8H8TZkzKIah6dvt/view?usp=drive_link" target="_blank">OFFICE</a>
+    <a href="https://drive.google.com/file/d/1p9nIOX3UVuMxfw1osIedt30kteWfXcRN/view?usp=sharing" target="_blank">AOMEI PARTITION MANAGER</a>
+    <a href="https://drive.google.com/file/d/1lfEDNzofeNTOsLk-2GbgDWI204CnaQZd/view?usp=drive_link" target="_blank">AOMEI BACKUPPER</a>
+    <a href="https://drive.google.com/file/d/1ZOs6ag2AdNkiWh6L16oZoyJTm2dI4OQr/view?usp=sharing" target="_blank">ADOBE ACROBAT READER</a>
+  </div>
+</body>
+</html>
